@@ -25,10 +25,6 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index, current_player(board))
     display_board(board)
-=begin    if over?(board)
-      winner(board)
-    else puts "Cats Game"
-=end
   else
     turn(board)
   end
