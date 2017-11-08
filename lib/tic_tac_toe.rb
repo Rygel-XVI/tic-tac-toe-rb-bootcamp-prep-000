@@ -38,8 +38,6 @@ def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
 end
 
-
-
 def turn_count(board)
   counter = 0
   board.each do |spot|
@@ -86,7 +84,7 @@ def won?(board)
     spot3 = board[combo[2]]
     if (spot1 == "X" || spot1 == "O")
       if (spot1 == spot2 && spot1 == spot3)
-        puts combo
+#        puts combo
         return combo
       end
     end
