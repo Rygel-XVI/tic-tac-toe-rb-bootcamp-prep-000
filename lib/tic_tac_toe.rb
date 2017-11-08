@@ -84,7 +84,6 @@ def won?(board)
     spot3 = board[combo[2]]
     if (spot1 == "X" || spot1 == "O")
       if (spot1 == spot2 && spot1 == spot3)
-#        puts combo
         return combo
       end
     end
